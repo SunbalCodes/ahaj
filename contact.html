@@ -36,9 +36,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <span>
-              AHAJ
-            </span>
+            <img src="logo.png" alt="AHAJ" style="height: 100px;"> <!-- Replace "logo.png" with your logo file -->
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,26 +78,27 @@
         <div class="col-md-5 col-lg-4 offset-md-1">
           <div class="form_container">
             <div class="heading_container">
+              
               <h2>
                 Request A Call back
               </h2>
             </div>
-            <form action="">
+            <form method="post" action="https://script.google.com/macros/s/AKfycby8BPatOvCcypjrbveNjA0_bAQyr11zp1sURwijhCUF58HZftN80HNEcAuNsoowwdoejA/exec" name="contact-form">
               <div>
-                <input type="text" placeholder="Full Name " />
+                <input type="text" name="urname" placeholder="Full Name " />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" name="uremail" placeholder="Email" />
               </div>
               <div>
-                <input type="text" placeholder="Phone number" />
+                <input type="text" name="urnumber" placeholder="Phone number" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" name="urmessage" class="message-box" placeholder="Message" />
               </div>
               <div class="d-flex ">
                 <button>
-                  SEND
+                  Send
                 </button>
               </div>
             </form>
@@ -108,12 +107,12 @@
         <div class="col-md-6 col-lg-7 px-0">
           <div class="map_container">
             <div class="map">
-              <div id="googleMap"></div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10417.430252555378!2d55.33077905784856!3d25.26715838738033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5ce906f867d1%3A0x8a6d992d9274e41e!2sAl%20Khabaisi%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1744963058275!5m2!1sen!2s" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+        
+    <script src="googlesheet.js"></script>
   </section>
 
   <!-- end contact section -->
@@ -172,37 +171,34 @@
                 Address
               </h4>
               <div class="contact_link_box">
-                <a href="">
+                <a href="https://maps.app.goo.gl/9FtxPDVW5imesvqt7">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
                   <span>
-                    Location
+                    Office M49, Commercial Bank of Dubai,  Land Area, Al Khabeesi
                   </span>
                 </a>
-                <a href="">
+                <a href="tel:+971551910063">
                   <i class="fa fa-phone" aria-hidden="true"></i>
                   <span>
-                    Call +01 1234567890
+                    Call +971551910063
                   </span>
                 </a>
-                <a href="">
+                <a href="mailto:aurangzebali370@gmail.com">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                   <span>
-                    demo@gmail.com
+                    contact@ahajmarketing.net
                   </span>
                 </a>
               </div>
             </div>
             <div class="info_social">
-              <a href="">
+              <a href="https://www.facebook.com/share/1BZQcePg6C/">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
+              <a href="https://wa.me/+971551910063">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
               </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
+              <a href="https://www.instagram.com/ahajmarketing009?igsh=NzF0N3QydzZudWF5">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
@@ -218,7 +214,7 @@
       <div class="container">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
+          <a href="https://novasole.pk/">NovaTech PK</a>
         </p>
       </div>
     </footer>
